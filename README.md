@@ -51,4 +51,25 @@ To run the pipeline, follow these steps:
    6. `denormalize_data.py`: Creates an aggregate table with important e-commerce KPIs.
    7. `visual/app.py`: Run this to view the ingested data through a web interface.
    
-   
+### Screen shots
+ 1. `dummy_data_generator.py`
+    
+    ![image](https://github.com/bilaltariq/ETL-Using-Kafka/assets/10683094/b890b040-5b7b-4eed-b366-345f1f6d171d)
+
+ 2. `kafka_setup.py`
+    
+    ![image](https://github.com/bilaltariq/ETL-Using-Kafka/assets/10683094/f9cccf40-1cdc-40ab-b9da-6f6f14541b06)
+
+ 3. `clickhouse_setup.py`
+    
+     ![image](https://github.com/bilaltariq/ETL-Using-Kafka/assets/10683094/fd06265a-0868-405e-b462-f942b01a740f)
+
+
+     ![image](https://github.com/bilaltariq/ETL-Using-Kafka/assets/10683094/09cd9bee-eda0-4b8f-a8ba-53b68adb7e1f)
+
+  
+ 5. `visual/app.py`
+    
+     ![image](https://github.com/bilaltariq/ETL-Using-Kafka/assets/10683094/a234a12d-23b1-41bc-b1ac-dbe55de4ea6b)
+
+
