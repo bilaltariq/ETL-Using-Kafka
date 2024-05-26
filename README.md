@@ -32,5 +32,23 @@ The project is organized as follows:
     - **requirements.txt**: Lists all the necessary Python libraries.
   - **visual/**: Additional Python files for data visualization, using Flask to display the ingested data on a web page. 
     - **dummy_data_generator_realtime.py**: Additional file to produce data in real-time.
+    - **app.py**: Web application to view ingested data.
 
 This structure helps in keeping the project organized and maintainable, with separate directories for source code, configuration, and visualization components.
+
+### Running the Pipeline
+
+To run the pipeline, follow these steps:
+
+1. Ensure Docker is installed on your system.
+2. Execute `project-setup.bat` located in the root folder. This will create a virtual environment and pull all required Docker images from Docker Hub.
+3. Manually run the Python files in the following sequence:
+   1. `dummy_data_generator.py`: Starts the MySQL container and generates dummy data.
+   2. `kafka_setup.py`: Starts the Kafka and Zookeeper containers.
+   3. `kafka_producers.py`: Pulls data from MySQL and pushes it to the Kafka server.
+   4. `clickhouse_setup.py`: Starts the ClickHouse Docker container and creates default data tables.
+   5. `kafka_consumers.py`: Pulls data from the Kafka server and pushes it to ClickHouse.
+   6. `denormalize_data.py`: Creates an aggregate table with important e-commerce KPIs.
+   7. `visual/app.py`: Run this to view the ingested data through a web interface.
+   
+   
