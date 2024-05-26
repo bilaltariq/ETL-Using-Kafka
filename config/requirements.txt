@@ -1,0 +1,7 @@
+faker
+mysql
+mysql-connector-python
+kafka-python-ng
+clickhouse_connect
+docker
+flask

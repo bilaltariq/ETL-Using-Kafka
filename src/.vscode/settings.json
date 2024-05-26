@@ -1,0 +1,4 @@
+{
+    "python.createEnvironment.contentButton": "hide",
+    "python.terminal.activateEnvInCurrentTerminal": false
+}
