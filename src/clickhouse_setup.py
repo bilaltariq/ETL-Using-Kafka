@@ -51,7 +51,10 @@ def initialize_clickhouse():
     setup_clickhouse()
     wait_for_clickhouse()
 
-    with open('src/create_clickhouse_tables.sql', 'r') as file:
+    # if you are running this file from root folder then edit the path
+    # with open('src/create_clickhouse_tables.sql', 'r') as file:
+    
+    with open('create_clickhouse_tables.sql', 'r') as file:
         sql_commands = file.read().strip().split(';')
         
         for command in sql_commands:
